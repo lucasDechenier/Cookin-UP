@@ -1,40 +1,37 @@
-# cookin-up
+# Cookin' Up!
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto feito para o curso da Alura **Vue 3: entendendo componentes, diretivas e reatividade no framework**.
 
-## Recommended IDE Setup
+![Imagem da primeira página do projeto, exportada do Figma.](./homepage.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![Imagem da segunda página do projeto, exportada do Figma.](./receitas.png)
 
-## Type Support for `.vue` Imports in TS
+No Cookin' Up, você vai selecionando ingredientes para construir a sua lista de ingredientes. Em seguida, é possível buscar as receitas possíveis de serem feitas com os ingredientes da sua lista!
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Setup Recomendado
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Desabilite a extensão Vetur, caso a tenha instalada no seu VSCode.
 
-## Customize configuration
+## Suporte para arquivos `.vue` no TypeScript
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Nos editores de código, precisamos do [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) para que o serviço da linguagem TypeScript reconheça arquivos com a extensão `.vue`.
 
-## Project Setup
+Se o serviço TypeScript nativo do VSCode não estiver rápido o suficiente para você, o Volar implementou um modo *Takeover* que é mais eficiente. Para ativá-lo, siga os passos da seção [Volar Takeover Mode](https://vuejs.org/guide/typescript/overview.html#volar-takeover-mode) da documentação.
+
+## Setup do projeto
+
+Após baixar ou clonar o repositório, abra o terminal do seu computador na pasta do projeto e execute o comando abaixo:
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Aguarde a instalação das dependências. Ao finalizar, execute o seguinte comando para rodar o servidor Vite:
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+O Vite irá disponibilizar um link local para você abrir a aplicação em seu navegador. Esse último comando deve ser executado sempre que você abrir o VSCode e quiser visualizar o projeto.
